@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieWinds - Filmes em Cartaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-img-placeholder"></div>
+                <h1 class="logo">MovieWinds</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Em Cartaz</a></li>
+                    <li><a href="#">Em Breve</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="movies-section">
+            <div class="container">
+                <h2>Em Cartaz</h2>
+                <div class="carousel-container">
+                    <button class="carousel-button prev">&#10094;</button>
+                    <div class="carousel-track-container">
+                        <div class="carousel-track">
+                            <a href="compra.html?filme=Aventura Intergaláctica&img=images/filme1.jpg" class="movie-card">
+                                <img src="images/filme1.jpg" alt="Pôster do Filme 1">
+                                <div class="movie-info">
+                                    <h3>Aventura Intergaláctica</h3>
+                                </div>
+                            </a>
+                            <a href="compra.html?filme=O Segredo da Floresta&img=images/filme2.jpg" class="movie-card">
+                                <img src="images/filme2.jpg" alt="Pôster do Filme 2">
+                                <div class="movie-info">
+                                    <h3>O Segredo da Floresta</h3>
+                                </div>
+                            </a>
+                            <a href="compra.html?filme=A Última Comédia&img=images/filme3.jpg" class="movie-card">
+                                <img src="images/filme3.jpg" alt="Pôster do Filme 3">
+                                <div class="movie-info">
+                                    <h3>A Última Comédia</h3>
+                                </div>
+                            </a>
+                            <a href="compra.html?filme=Código Sombrio&img=images/filme4.jpg" class="movie-card">
+                                <img src="images/filme4.jpg" alt="Pôster do Filme 4">
+                                <div class="movie-info">
+                                    <h3>Código Sombrio</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-button next">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MovieWinds. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
