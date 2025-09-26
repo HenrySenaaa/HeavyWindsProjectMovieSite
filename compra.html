@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Ingresso - MovieWinds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+             <div class="logo-container">
+                <div class="logo-img-placeholder"></div>
+                <h1 class="logo">MovieWinds</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Voltar ao Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container purchase-page-layout">
+            <div class="purchase-info-column">
+                <div class="purchase-container">
+                    <div class="movie-poster-purchase">
+                        <img id="movie-poster" src="images/filme1.png" alt="Pôster do filme">
+                    </div>
+                    <div class="purchase-details">
+                        <h2 id="movie-title">Nome do Filme</h2>
+                        <p class="session-info">Sessão: <strong>26 de Setembro de 2025 - 20:00</strong></p>
+                        
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantidade:</label>
+                            <button id="decrease-quantity">-</button>
+                            <span id="quantity">1</span>
+                            <button id="increase-quantity">+</button>
+                        </div>
+                        <p class="quantity-limit">Máximo de 8 ingressos por compra.</p>
+
+                        <button id="buy-button" class="btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seat-selection-column">
+                <div class="seat-selection-container">
+                    <h4>Mapa de Assentos</h4>
+                    <img src="images/assentos.png" alt="Mapa de assentos do cinema">
+                    <p>Seus assentos aparecerão aqui.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Compra sucedida, aproveite o filme!</h3>
+            <button id="close-modal-btn">Fechar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MovieWinds. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="compra.js"></script>
+</body>
+</html>
