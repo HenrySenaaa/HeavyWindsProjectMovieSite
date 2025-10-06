@@ -42,16 +42,26 @@ nav a:hover { color: var(--cor-destaque); }
 /* --- Estilos do Carrossel --- */
 .carousel-container { position: relative; display: flex; align-items: center; }
 .carousel-track-container { overflow: hidden; width: 100%; }
-.carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
-.movie-card { min-width: 280px; margin: 0 15px; background-color: var(--cor-fundo-secundaria); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease; color: var(--cor-texto-principal); }
+.carousel-track {
+    display: flex;
+    justify-content: center; /* Centraliza o card horizontalmente */
+    padding: 20px 0; /* Adiciona um espaço para respirar */
+}
+.movie-card {
+    width: 100%; /* Adicione esta linha para ajudar na responsividade */
+    max-width: 280px; /* Troque min-width por max-width para limitar o tamanho */
+    margin: 0 15px;
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    color: var(--cor-texto-principal);
+}
 .movie-card:hover { transform: scale(1.05); }
 .movie-card img { width: 100%; display: block; }
 .movie-info { padding: 20px; }
 .movie-info h3 { font-size: 1.4rem; color: var(--cor-destaque); }
-.carousel-button { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); border: 1px solid var(--cor-borda); color: white; font-size: 2rem; cursor: pointer; z-index: 10; padding: 10px; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; }
-.carousel-button.prev { left: -25px; }
-.carousel-button.next { right: -25px; }
-.carousel-button:hover { background-color: rgba(0,0,0,0.8); }
 
 /* --- Página de Compra --- */
 .purchase-page-layout { display: flex; gap: 40px; margin-top: 40px; align-items: flex-start; }
